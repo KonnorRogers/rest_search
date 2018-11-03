@@ -24,6 +24,22 @@
 
 <p>This will create a pry instance in which you simply type: </p>
 
+    >> search
+
+<p> This will create a query to bing using the word you searched. </p>
+
+<p> You can manipulate this search with methods provided by rest-client </p>
+
+<p> For example: </p>
+
+    >> search
+
+    >> 'returns a large string'
+
+    >> query.cookies
+
+    >> 'returns cookies associated'
+
     
     
 
