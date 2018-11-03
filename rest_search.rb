@@ -1,17 +1,18 @@
 # frozen_string_literal: true
 
 require 'rest-client'
+require 'pry'
 
 def sanitize_search(input:)
   input.split.join('+')
 end
 
+query = nil
+
 def search(input:)
-  input = sanitize_search(input: input)
-  RestClient.get("http://www.bing.com/search?q=#{input}")
+  puts 'What would you like to search?'
+  input ||= sanitize_search(gets.chomp)
+  query = RestClient.get("http://www.bing.com/search?q=#{input}")
 end
 
-puts 'What would you like to search?'
-input = gets.chomp
-results = search(input: input)
-puts results
+binding.pry
