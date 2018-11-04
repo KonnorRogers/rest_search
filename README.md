@@ -34,12 +34,21 @@
 
     >> search
 
+    >> "What would you like to search?"
+
+    >> Enter a search term:
+
     >> 'returns a large string'
 
     >> query.cookies
 
     >> 'returns cookies associated'
 
+    >> query.headers
+
+    >> 'returns headers associated'
+
+* For more methods that can be run on query refer to rest-client gem
     
     
 

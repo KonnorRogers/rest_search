@@ -9,9 +9,9 @@ end
 
 query = nil
 
-def search(input:)
+def search(input: nil)
   puts 'What would you like to search?'
-  input ||= sanitize_search(gets.chomp)
+  input ||= sanitize_search(input: gets.chomp)
   query = RestClient.get("http://www.bing.com/search?q=#{input}")
 end
 
